@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/reset-css/reset.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About us</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <div class="logo">
+            INTERNET SHOP
+        </div>
+        <div class="clock_block">
+            <div id="clock"></div>
+        </div>
+    </div>
+</header>
+
+<section class="slider_block">
+	<div class="container">
+        <ul id="slides">
+            <li class="slide showing">Slide 1</li>
+            <li class="slide">Slide 2</li>
+            <li class="slide">Slide 3</li>
+            <li class="slide">Slide 4</li>
+            <li class="slide">Slide 5</li>
+        </ul>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="row smart_block">
+            <div class="p_block col-lg-4 col-md-4 col-xs-4">
+                <p class="label_smart">Apple Iphone</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9S9gj5T9oBHXXwRjtDJ5HWT5UG4ancGfCMhy7s-ns3QjQd9v1" alt="apple iphone">
+                <div class="price row">
+                    <p class="col-lg-4 col-md-4 col-xs-4">$1000</p>
+                    <select class="col-lg-4 col-md-4 col-xs-4" id="apple">
+                    	<option>1</option>
+                    	<option>2</option>
+                    	<option>3</option>
+                    	<option>4</option>
+                    	<option>5</option>
+                    </select>
+                    <button class="col-lg-4 col-md-4 col-xs-4" id="box1">В корзину</button>
+                </div>
+            </div>
+            <div class="p_block col-lg-4 col-md-4 col-xs-4">
+                <p class="label_smart">Meizu</p>
+                <img src="https://stylus.ua/thumbs/320x320/ac/42/548834.png" alt="meizu">
+                <div class="price row">
+                    <p class="col-lg-4 col-md-4 col-xs-4">$250</p>
+                    <select class="col-lg-4 col-md-4 col-xs-4" id="meizu">
+                    	<option>1</option>
+                    	<option>2</option>
+                    	<option>3</option>
+                    	<option>4</option>
+                    	<option>5</option>
+                    </select>
+                    <button class="col-lg-4 col-md-4 col-xs-4" id="box2">В корзину</button>
+                </div>
+            </div>
+            <div class="p_block col-lg-4 col-md-4 col-xs-4">
+                <p class="label_smart">Lenovo</p>
+                <img src="https://static.svyaznoy.ru/upload/iblock/16d/2268905_0.jpg/resize/483x483/hq/" alt="lenovo">
+                <div class="price row">
+                    <p class="col-lg-4 col-md-4 col-xs-4">$100</p>
+                    <select class="col-lg-4 col-md-4 col-xs-4" id="lenovo">
+                    	<option>1</option>
+                    	<option>2</option>
+                    	<option>3</option>
+                    	<option>4</option>
+                    	<option>5</option>
+                    </select>
+                    <button class="col-lg-4 col-md-4 col-xs-4" id="box3">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ready_order">
+            <button class="btn btn-info btn-md" type="button" data-toggle="modal" data-target="#myModal">Оформить заказ</button>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+                            <h5 class="modal-title">Форма заказа</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="label_block">
+                                    <p><label for="firstname">First Name:</label></p>
+                                    <p><label for="lastname">Last Name:</label></p>
+                                    <p><label for="email">E-mail:</label></p>
+                                    <p><label for="g">Gender:</label></p>
+                                    <p><label for="city">City:</label></p>
+                                    <p><label for="address">Address:</label></p>
+                                </div>
+                                <div class="inform_block">
+                                    <p><input type="text" name="firstname" placeholder="Ввведите свое имя" id="firstname"></p>
+                                    <p><input type="text" name="lastname" placeholder="Ввведите свою фамилию" id="lastname"></p>
+                                    <p><input type="text" name="email" placeholder="Введите свой email" id="email"></p>
+                                    <p><input type="radio" name="g" value="m" id="g"> Мужской
+                                        <input type="radio" name="g" value="f" id="g"> Женский</p>
+                                    <p><select id="city">
+                                        <option id="simple"></option>
+                                        <option id="t">Одесса</option>
+                                        <option id="t">Киев</option>
+                                        <option id="t">Днепро</option>
+                                        <option id="t">Львов</option>
+                                        <option id="t">Запорожье</option>
+                                        <option id="t">Житомир</option>
+                                        <option id="t">Тернополь</option>
+                                        <option id="t">Кривой Рог</option>
+                                        <option id="t">Луганск</option>
+                                    </select></p>
+                                    <p><input type="text" name="address" placeholder="Введите свой адрес" id="address"></p>
+                                </div>
+                            </form>
+                            <div id="date_about_product">
+                                <p>Данные о заказе:</p>
+                                <p id="name_product"></p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="send_msg">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="data_smart"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        Odessa - 2017
+    </div>
+</footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src ="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="dist/dist.js"></script>
+</body>
+</html>
